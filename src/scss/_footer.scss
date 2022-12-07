@@ -1,0 +1,33 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 2rem;
+
+  .attribution {
+    a {
+      color: inherit;
+    }
+  }
+
+  .btn {
+    cursor: pointer;
+    padding: 0.7rem 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    border-radius: 0.7rem;
+    border: solid 3px $header-outline;
+    background: transparent;
+    color: #fff;
+    transition: all 0.25s;
+
+    &:hover {
+      color: $rock;
+      background-color: #fff;
+      border: solid 3px $rock;
+    }
+  }
+}
