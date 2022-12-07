@@ -8,9 +8,14 @@
   box-sizing: border-box;
 }
 
+.app-container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   color: #fff;
   background: $radial-gradient;
-  text-align: center;
 }
