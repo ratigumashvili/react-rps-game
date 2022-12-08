@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { useEffect } from "react";
+import GameAnimation from "./GameAnimation";
 
 const Game = ({
   humanScore,
@@ -79,6 +80,7 @@ const Game = ({
           ></div>
         </div>
       </div>
+      <GameAnimation message={message} />
     </section>
   );
 };
