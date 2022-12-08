@@ -1,0 +1,34 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .modal-content {
+    padding: 2rem;
+    background-color: #fff;
+    color: $dark-text;
+    border-radius: 0.8rem;
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        text-transform: uppercase;
+      }
+
+      .close-btn {
+        border: unset;
+        background: unset;
+        cursor: pointer;
+      }
+    }
+  }
+}

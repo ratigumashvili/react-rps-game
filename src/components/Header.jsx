@@ -4,7 +4,7 @@ const Header = ({ humanScore, computerScore }) => {
   return (
     <header className="header">
       <div className="score-wrapper">
-        <span className="score-title">Human score</span>
+        <span className="score-title">Your score</span>
         <span className="score">{humanScore}</span>
       </div>
       <div className="title">
