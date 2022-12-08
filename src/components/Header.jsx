@@ -1,11 +1,11 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ humanScore, computerScore }) => {
   return (
-    <section className="header">
+    <header className="header">
       <div className="score-wrapper">
         <span className="score-title">Human score</span>
-        <span className="score">0</span>
+        <span className="score">{humanScore}</span>
       </div>
       <div className="title">
         <span>ROCK</span>
@@ -14,9 +14,9 @@ const Header = () => {
       </div>
       <div className="score-wrapper">
         <span className="score-title">Computer score</span>
-        <span className="score">0</span>
+        <span className="score">{computerScore}</span>
       </div>
-    </section>
+    </header>
   );
 };
 

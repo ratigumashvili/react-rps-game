@@ -1,0 +1,91 @@
+.game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .items-wrapper {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      text-align: center;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h1,
+      h2 {
+        text-transform: uppercase;
+      }
+    }
+
+    .play-again {
+      width: 100%;
+      display: inline-block;
+      padding: 1rem 3rem;
+      border-radius: 0.7rem;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      letter-spacing: 0.3rem;
+      text-align: center;
+      text-decoration: none;
+      background-color: #fff;
+      color: $dark-text;
+      transition: color 0.25s;
+
+      &:hover {
+        color: crimson;
+      }
+    }
+  }
+}
+
+.icon {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  &.icon-rock {
+    border: solid 1.2rem $rock;
+    box-shadow: inset 0px 5px 6px grey, 0px 8px darken($rock, 15%);
+    background: url("../images/icon-rock.svg") #fff;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+  }
+
+  &.icon-paper {
+    border: solid 1.2rem $paper;
+    box-shadow: inset 0px 5px 6px grey, 0px 8px darken($paper, 15%);
+    background: url("../images/icon-paper.svg") #fff;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+  }
+
+  &.icon-scissors {
+    border: solid 1.2rem $scissors;
+    box-shadow: inset 0px 5px 6px grey, 0px 8px darken($scissors, 15%);
+    background: url("../images/icon-scissors.svg") #fff;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+  }
+
+  &.winner {
+    box-shadow: 0px 0px 0px 170px rgba(255, 255, 255, 0.05),
+      0px 0px 0px 100px rgba(255, 255, 255, 0.05),
+      0px 0px 0px 50px rgba(255, 255, 255, 0.05);
+  }
+}
